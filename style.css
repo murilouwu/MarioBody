@@ -1,0 +1,128 @@
+:root{
+  --Black: #1c1230;
+  --Gold: #e6c98d;
+  --BigBlack: #03061a;
+  --ShadowGold: #b37841;
+  --invisible: rgba(0 0 0 / 0%);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  transition: 0.3s;
+}
+/*web-kit*/
+  input[type=file]{
+    display: none;
+  }
+  ::-webkit-inner-spin-button{
+
+    -webkit-appearance: none;
+  }
+  ::-webkit-scrollbar{
+
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: rgb(0 0 0 /50%);
+    border-radius: 3px;
+  }
+  .ocultar{
+    display: none;
+  }
+  button:focus, button:focus-visible, input:focus-visible, input:focus, select:focus-visible, select:focus, textarea:focus-visible, textarea:focus{
+    outline: none;
+  }
+  input[type=checkbox]{
+      display: none;
+  }
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: overlay;
+  background-color: var(--Gold);
+}
+
+  .bodye{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+  }
+    .head{
+      display: flex;
+      background-image: url('head.png');
+      width: 8vw;
+      height: 10vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 10vw;
+      margin-bottom: -1vh;
+      z-index: 2;
+    }
+    .main{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 26vh;
+      height: 8vh;
+    }
+      .torco{
+        display: flex;
+        width: 6vw;
+        height: 100%;
+        background-image: url('body.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 8vh;
+        z-index: 2;
+      }
+      .arm{
+        display: flex;
+        width: 7vw;
+        height: 100%;
+        background-image: url('arm.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0vw 0vh;
+        /* position: absolute; */
+        transform: scaleX(1);
+        margin: 0vh 0vw 0vh -2vw;
+      }
+      .arm:nth-child(1){
+        transform: scaleX(-1);
+        margin: 0vh -2vw 0vh 0vw;
+      }
+    .fotter{
+      display: flex;
+      background-color: var(--ShadowGold);
+      height: 8vh;
+      width: 10vw;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+      .leg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Black);
+        height: 100%;
+        width: 30%;
+        margin-left: 10%;
+      }
+        .legUp{
+          display: flex;
+        }
+        .legDown{
+          display: flex;
+        }
+        .foot{
+          display: flex;
+        }
